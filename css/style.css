@@ -35,7 +35,7 @@ footer{
 }
 
 .bird-range{
-    flex: 8;
+    flex: 5;
     counter-reset: checked input;
 }
 
@@ -175,15 +175,13 @@ footer{
     text-decoration: none;
     color: white;
     text-align: center;
-    font-size: 5em;
-    padding: 5% 10%;
+    font-size: 3em;
+    padding: 3% 6%;
     position: absolute;
-    top: 15%;
-    left: 20%;
     background-color: rgb(185, 19, 136);
     box-shadow: rgb(54, 54, 110) 2px 4px;
     border-radius: 5%;
-    animation: appear 15s forwards;
+    animation: appear 20s forwards;
   }
 
   @keyframes appear {
@@ -196,7 +194,8 @@ footer{
       opacity:0;
     }
     100% {
-      top: 150px;
+      top: 30%;
+      left: 30%;
       opacity: 1;
     }
   }
@@ -207,4 +206,8 @@ footer{
 
   input{
     counter-increment: input;
+}
+
+input:checked + span{
+  display: none;
 }
