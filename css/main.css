@@ -102,6 +102,6 @@ span:hover {
 @keyframes  rotate {
   0% { transform: rotateY(0deg); box-shadow: rgb(167, 39, 39) 2px 4px;
   }
-  100% {transform: rotateY(360deg); box-shadow:rgb(167, 39, 39) rgb(167, 39, 39) 2px 4px;
+  100% {transform: rotateY(360deg); box-shadow:rgb(167, 39, 39) 2px 4px;
   }
 }

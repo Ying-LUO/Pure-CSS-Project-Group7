@@ -171,7 +171,7 @@ footer{
     100% {transform: translateY(50%);}
   }
 
-  span {
+  .again {
     text-decoration: none;
     color: white;
     text-align: center;
