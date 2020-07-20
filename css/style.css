@@ -39,19 +39,6 @@ footer{
     counter-reset: checked input;
 }
 
-input[type="radio"]:checked{
-    counter-increment: checked;
-}
-
-input[type="radio"]:checked+div{
-    display: none;
-    opacity: 0;
-}
-
-input[type="radio"]{
-    counter-increment: input;
-}
-
 .count::before {
     content: "Score : " counter(checked);
     font-size: 3em;
@@ -85,16 +72,6 @@ input[type="radio"]{
   input[type="radio"]{
       opacity: 0;
   }
-
-label:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-  }
-
-label:target{
-    animation: none;
-}
 
   label:nth-of-type(10n+1) {
     top: 52%;
@@ -198,11 +175,36 @@ label:target{
     text-decoration: none;
     color: white;
     text-align: center;
-    font-size: large;
-    padding: 1% 2%;
+    font-size: 5em;
+    padding: 5% 10%;
     position: absolute;
     top: 15%;
+    left: 20%;
     background-color: rgb(185, 19, 136);
     box-shadow: rgb(54, 54, 110) 2px 4px;
     border-radius: 5%;
+    animation: appear 15s forwards;
   }
+
+  @keyframes appear {
+    0% {
+      top: -10px;
+      opacity: 0;
+    }
+    99%{
+      top: 0;
+      opacity:0;
+    }
+    100% {
+      top: 150px;
+      opacity: 1;
+    }
+  }
+
+  input:checked{
+    counter-increment: checked;
+}
+
+  input{
+    counter-increment: input;
+}

@@ -84,10 +84,11 @@ span {
   text-decoration: none;
   color: white;
   text-align: center;
-  font-size: large;
-  padding: 1% 2%;
+  font-size: 2em;
+  padding: 2% 4%;
   position: absolute;
-  top: 40%;
+  top: 25%;
+  left: 40%;
   background-color: rgb(185, 19, 136);
   box-shadow: rgb(54, 54, 110) 2px 4px;
   border-radius: 5%;
